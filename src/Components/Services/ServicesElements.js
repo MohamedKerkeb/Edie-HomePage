@@ -14,14 +14,27 @@ export const ServicesContainer = styled.div`
 	flex-direction: column;
 	width: 100%;
 	max-width: 1100px;
+	@media screen and (max-width: 768px) {
+		width: 90%;
+	}
 `;
 
 export const TitleServices = styled.h3`
-	border: 1px dashed red;
+	${'' /* border: 1px dashed red; */}
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 54px;
+	width: 30%;
+
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+		line-height: 36px;
+		width: 70%;
+	}
 `;
 
 export const CardWrapper = styled.div`
-	border: 1px solid brown;
+	${'' /* border: 1px solid brown; */}
 	display: flex;
 	justify-content: space-around;
 	padding: 20px 0;
@@ -49,14 +62,16 @@ export const Card = styled.div`
 	}
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.div.attrs((props) => ({
+	background: props.color,
+}))`
 	width: 67px;
 	height: 67px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 12px;
-	background: #2d9cdb;
+	background: ${(props) => props.color};
 	color: #fff;
 	font-size: 1.5rem;
 `;

@@ -24,7 +24,7 @@ const Services = () => {
 					<TitleServices>We Offer high demand services</TitleServices>
 					<CardWrapper>
 						<Card>
-							<Icon>
+							<Icon color='#2D9CDB'>
 								<FontAwesomeIcon icon={faPen} />
 							</Icon>
 							<TitleCard>UI/UX Design</TitleCard>
@@ -37,7 +37,7 @@ const Services = () => {
 							</BtnWrapper>
 						</Card>
 						<Card>
-							<Icon>
+							<Icon color='#27AE60'>
 								<FontAwesomeIcon icon={faAngleRight} />
 							</Icon>
 							<TitleCard>Front End</TitleCard>
@@ -50,7 +50,7 @@ const Services = () => {
 							</BtnWrapper>
 						</Card>
 						<Card>
-							<Icon>
+							<Icon color='#EB5757'>
 								<FontAwesomeIcon icon={faServer} />
 							</Icon>
 							<TitleCard>Back End</TitleCard>
