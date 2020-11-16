@@ -1,0 +1,38 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+
+import { SidebarContainer, Icon, SidebarWrapper, SidebarMenu, SidebarLink } from './sidebarElements';
+
+const Sidebar = ({ isOpen, toggle }) => {
+	return (
+		<>
+			<SidebarContainer isOpen={isOpen} onClick={toggle}>
+				<Icon onClick={toggle}>
+					<FontAwesomeIcon icon={faTimesCircle} />
+				</Icon>
+				<SidebarWrapper>
+					<SidebarMenu>
+						<SidebarLink to='' onClick={toggle}>
+							Home
+						</SidebarLink>
+						<SidebarLink to='' onClick={toggle}>
+							Services
+						</SidebarLink>
+						<SidebarLink to='' onClick={toggle}>
+							Our Works
+						</SidebarLink>
+						<SidebarLink to='' onClick={toggle}>
+							Clients
+						</SidebarLink>
+						<SidebarLink to='' onClick={toggle}>
+							Contact
+						</SidebarLink>
+					</SidebarMenu>
+				</SidebarWrapper>
+			</SidebarContainer>
+		</>
+	);
+};
+
+export default Sidebar;
