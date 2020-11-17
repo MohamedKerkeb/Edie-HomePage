@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Services from './Components/Services';
 import Sidebar from './Components/Sidebar';
 import Works from './Components/Works';
+import Team from './Components/Team';
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ function App() {
 			<Header />
 			<Services />
 			<Works />
+			<Team />
 		</>
 	);
 }

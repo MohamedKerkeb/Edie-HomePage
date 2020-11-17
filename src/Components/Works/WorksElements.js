@@ -47,8 +47,8 @@ export const WorksImageWrapper = styled.div.attrs((props) => ({
 	row: props.row,
 }))`
 	${'' /* border: 1px solid gold; */}
-	width: 530px;
-	height: 530px;
+	width: 510px;
+	height: 510px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -63,7 +63,7 @@ export const WorksImageWrapper = styled.div.attrs((props) => ({
 
 export const ImageWork = styled.img`
 	${'' /* border: 1px solid aliceblue; */}
-	height: 80%;
+	height: 90%;
 	width: 100%;
 	border-radius: 12px;
 `;
