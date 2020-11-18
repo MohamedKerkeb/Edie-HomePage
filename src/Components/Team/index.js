@@ -15,6 +15,8 @@ import {
 	TeamSmall,
 	TeamTextWrapper,
 	TeamWrapper,
+	WrapImg1,
+	WrapImg,
 } from './TeamElements';
 
 const Team = () => {
@@ -28,9 +30,14 @@ const Team = () => {
 						<TeamSmall>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</TeamSmall>
 					</TeamTextWrapper>
 					<TeamImgWrapper>
-						<ImgTeam1 src={Perso1} />
-						<ImgTeam2 src={Perso2} />
-						<ImgTeam3 src={Perso3} />
+						<WrapImg1>
+							<ImgTeam1 src={Perso1} />
+							<ImgTeam2 src={Perso2} />
+						</WrapImg1>
+
+						<WrapImg>
+							<ImgTeam3 src={Perso3} />
+						</WrapImg>
 					</TeamImgWrapper>
 				</TeamContainer>
 			</TeamWrapper>

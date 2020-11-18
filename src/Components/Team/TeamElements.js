@@ -9,8 +9,9 @@ export const TeamWrapper = styled.div`
 `;
 
 export const TeamContainer = styled.div`
-	border: 1px solid red;
+	${'' /* border: 1px solid red; */}
 	width: 100%;
+	margin: 10px;
 	max-width: 1100px;
 	display: flex;
 	flex-direction: row;
@@ -28,6 +29,7 @@ export const TeamTextWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 20px auto;
 
 	@media screen and (max-width: 768px) {
 		width: 100%;
@@ -66,17 +68,33 @@ export const TeamSmall = styled.small`
 export const TeamImgWrapper = styled.div`
 	${'' /* border: 1px solid navy; */}
 	width: 60%;
-	display: grid;
-	grid-template-columns: repeat(6, 110px);
-	grid-template-rows: repeat(6, 110px);
-	${'' /* gap: 10px; */};
+	${'' /* display: grid;
+	grid-template-columns: repeat(12, 50px);
+	grid-template-rows: repeat(12, 50px);
+	gap: 5px; */}
+	display: flex;
+	flex-direction: row-reverse;
 
 	@media screen and (max-width: 768px) {
-		grid-template-columns: repeat(6, 50px);
-		grid-template-rows: repeat(6, 50px);
 		width: 100%;
-		gap: 10px;
+		${'' /* gap: 10px; */}
 	}
+`;
+
+export const WrapImg1 = styled.div`
+	${'' /* border: 1px solid navy; */}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+`;
+
+export const WrapImg = styled.div`
+	${'' /* border: 1px solid navy; */}
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;
 
 export const ImgTeam1 = styled.img`
@@ -84,13 +102,12 @@ export const ImgTeam1 = styled.img`
 	width: 300px;
 	height: 300px;
 	border-radius: 24px;
-	grid-column: 4 / span 6;
-	grid-row: 1/3;
+	margin: 10px;
+	${'' /* grid-column: 7 / 12;
+	grid-row: 1; */}
 	@media screen and (max-width: 768px) {
 		width: 100%;
-		height: 100%;
-		grid-column: 4 / 6;
-		grid-row: 1/4;
+		height: 50%;
 	}
 `;
 
@@ -99,14 +116,13 @@ export const ImgTeam2 = styled.img`
 	width: 300px;
 	height: 300px;
 	border-radius: 24px;
-	grid-column: 4 / 6;
-	grid-row: 4/6;
+	margin: 10px;
+	${'' /* grid-column: 7;
+	grid-row: 7; */}
 
 	@media screen and (max-width: 768px) {
 		width: 100%;
-		height: 100%;
-		grid-column: 3 / 6;
-		grid-row: 4 / span 6;
+		height: 50%;
 	}
 `;
 
@@ -115,13 +131,12 @@ export const ImgTeam3 = styled.img`
 	width: 300px;
 	height: 300px;
 	border-radius: 24px;
-	grid-column: 1;
-	grid-row: 3;
+	margin: 0 10px;
+	${'' /* grid-column: 1;
+	grid-row: 5; */}
 
 	@media screen and (max-width: 768px) {
 		width: 100%;
-		height: 100%;
-		grid-column: 2 / span 3;
-		grid-row: 1/2;
+		height: 50%;
 	}
 `;
