@@ -34,7 +34,6 @@ const Team = () => {
 							<ImgTeam1 src={Perso1} />
 							<ImgTeam2 src={Perso2} />
 						</WrapImg1>
-
 						<WrapImg>
 							<ImgTeam3 src={Perso3} />
 						</WrapImg>

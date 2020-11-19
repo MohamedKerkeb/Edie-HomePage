@@ -15,19 +15,19 @@ const Navbar = ({ toggle }) => {
 					</Burger>
 					<Menu>
 						<Item>
-							<NavLinks to=''>Home</NavLinks>
+							<NavLinks to='home'>Home</NavLinks>
 						</Item>
 						<Item>
-							<NavLinks to=''>Services</NavLinks>
+							<NavLinks to='services'>Services</NavLinks>
 						</Item>
 						<Item>
-							<NavLinks to=''>Our Works</NavLinks>
+							<NavLinks to='works'>Our Works</NavLinks>
 						</Item>
 						<Item>
-							<NavLinks to=''>Clients</NavLinks>
+							<NavLinks to='clients'>Clients</NavLinks>
 						</Item>
 						<Item>
-							<NavLinks to=''>Contact</NavLinks>
+							<NavLinks to='contact'>Contact</NavLinks>
 						</Item>
 					</Menu>
 				</NavbarContainer>

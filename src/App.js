@@ -6,6 +6,8 @@ import Services from './Components/Services';
 import Sidebar from './Components/Sidebar';
 import Works from './Components/Works';
 import Team from './Components/Team';
+import Client from './Components/Client';
+import Footer from './Components/Footer';
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +24,8 @@ function App() {
 			<Services />
 			<Works />
 			<Team />
+			<Client />
+			<Footer />
 		</>
 	);
 }
