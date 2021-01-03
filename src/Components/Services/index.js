@@ -19,7 +19,7 @@ import {
 const Services = () => {
 	return (
 		<>
-			<ServicesWrapper>
+			<ServicesWrapper id='services'>
 				<ServicesContainer>
 					<TitleServices>We Offer high demand services</TitleServices>
 					<CardWrapper>

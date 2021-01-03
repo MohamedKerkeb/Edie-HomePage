@@ -4,7 +4,7 @@ export const TeamWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 24px 0;
+	padding: 24px 20px;
 `;
 
 export const TeamContainer = styled.div`

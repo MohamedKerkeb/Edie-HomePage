@@ -17,7 +17,7 @@ import {
 const Header = () => {
 	return (
 		<>
-			<HeaderWrapper>
+			<HeaderWrapper id='home'>
 				<HeaderContainer>
 					<HeaderContent>
 						<HeaderSmall>Unhappy with our website?</HeaderSmall>
@@ -34,7 +34,6 @@ const Header = () => {
 						</HeaderP>
 					</HeaderContent>
 					<StoryContent>
-						<HeaderP>Want us to contact you?</HeaderP>
 						<Input />
 					</StoryContent>
 				</HeaderContainer>

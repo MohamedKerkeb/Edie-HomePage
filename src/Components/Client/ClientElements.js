@@ -5,7 +5,11 @@ export const ClientWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 24px 0;
+	padding: 24px 20px;
+
+	@media screen and (max-width: 768px) {
+		padding: 24px 0px;
+	}
 `;
 
 export const ClientContainer = styled.div`

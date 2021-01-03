@@ -18,7 +18,7 @@ import {
 const Works = () => {
 	return (
 		<>
-			<WorksWrapper>
+			<WorksWrapper id='works'>
 				<WorksContainer>
 					<TitleWorks>Good design means good business</TitleWorks>
 					<GalleryWrapper>
@@ -27,17 +27,17 @@ const Works = () => {
 							<SmallWorks>Full stack application</SmallWorks>
 							<WorksH4>Smart home dashboard</WorksH4>
 						</WorksImageWrapper>
-						<WorksImageWrapper column='7' row='1 /span 5'>
+						<WorksImageWrapper column='6 / 11' row='1 /span 6'>
 							<ImageWork src={Img2} />
 							<SmallWorks>Full stack application</SmallWorks>
 							<WorksH4>Smart home dashboard</WorksH4>
 						</WorksImageWrapper>
-						<WorksImageWrapper column='1 / span 5' row='8/span 12'>
+						<WorksImageWrapper column='1 / span 5' row='8/ span 10'>
 							<ImageWork src={Img3} />
 							<SmallWorks>Full stack application</SmallWorks>
 							<WorksH4>Smart home dashboard</WorksH4>
 						</WorksImageWrapper>
-						<WorksImageWrapper column='7' row='7'>
+						<WorksImageWrapper column='6 / 11' row='7 / span 10'>
 							<ImageWork src={Img4} />
 							<SmallWorks>Full stack application</SmallWorks>
 							<WorksH4>Smart home dashboard</WorksH4>

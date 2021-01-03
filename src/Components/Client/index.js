@@ -7,8 +7,8 @@ import { ClientCard, ClientCardText, ClientContainer, ClientImg, ClientText, Cli
 const Client = () => {
 	return (
 		<>
-			<ClientWrapper id='client'>
-				<ClientContainer>
+			<ClientWrapper>
+				<ClientContainer id='clients'>
 					<ClientText>
 						<p>
 							“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented

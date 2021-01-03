@@ -23,7 +23,7 @@ const Team = () => {
 	return (
 		<>
 			<TeamWrapper>
-				<TeamContainer>
+				<TeamContainer id='contact'>
 					<TeamTextWrapper>
 						<TeamRed>Meet the theam</TeamRed>
 						<TeamH2>We are chilled and a laidback team</TeamH2>

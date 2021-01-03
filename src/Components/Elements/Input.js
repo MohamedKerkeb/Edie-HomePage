@@ -27,9 +27,12 @@ const InputGlobal = () => {
 	return (
 		<>
 			<Form>
+				<p>Want us to contact you?</p>
 				<InputWrapper>
 					<Input placeholder='Email' />
-					<Button primary={true}>Join</Button>
+					<Button primary={true} big={true}>
+						Join
+					</Button>
 				</InputWrapper>
 			</Form>
 		</>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkScroll } from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
 	position: fixed;
@@ -45,7 +46,7 @@ export const SidebarMenu = styled.ul`
 	}
 `;
 
-export const SidebarLink = styled.a`
+export const SidebarLink = styled(LinkScroll)`
 	display: flex;
 	align-items: center;
 	justify-content: center;

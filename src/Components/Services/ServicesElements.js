@@ -5,7 +5,11 @@ export const ServicesWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 24px 0;
+	padding: 24px 20px;
+
+	@media screen and (max-width: 768px) {
+		padding: 24px 0px;
+	}
 `;
 
 export const ServicesContainer = styled.div`

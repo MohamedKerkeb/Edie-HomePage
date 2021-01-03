@@ -4,7 +4,11 @@ export const HeaderWrapper = styled.div`
 	${'' /* border: 1px solid red; */}
 	display: flex;
 	justify-content: center;
-	padding: 24px 0;
+	padding: 24px 20px;
+
+	@media screen and (max-width: 768px) {
+		padding: 24px 0px;
+	}
 `;
 
 export const HeaderContainer = styled.div`
@@ -77,6 +81,7 @@ export const StoryContent = styled.div`
 	width: 50%;
 	margin-left: 150px;
 	margin-bottom: 20px;
+	color: #828282;
 
 	@media screen and (max-width: 768px) {
 		width: 90%;

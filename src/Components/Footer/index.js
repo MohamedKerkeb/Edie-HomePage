@@ -1,7 +1,10 @@
 import React from 'react';
 import InputGlobal from '../Elements/Input';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMosque } from '@fortawesome/free-solid-svg-icons';
+import { animateScroll as scroll } from 'react-scroll';
+
+import Insta from '../../img/instagram.svg';
+import Linkedin from '../../img/linkedin.svg';
+import Twitter from '../../img/twitter.svg';
 
 import {
 	FooterWrapper,
@@ -14,41 +17,57 @@ import {
 	FooterLogo,
 	FooterNav,
 	FooterSocial,
+	FooterRight,
 } from './FooterElements';
 
 const Footer = () => {
+	const toggleHome = () => {
+		scroll.scrollToTop();
+	};
 	return (
 		<>
 			<FooterWrapper>
 				<FooterContainer>
 					<FooterNav>
 						<FooterItem>
-							<FooterLink to=''>Home</FooterLink>
+							<FooterLink to='home' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+								Home
+							</FooterLink>
 						</FooterItem>
 						<FooterItem>
-							<FooterLink to=''>Services</FooterLink>
+							<FooterLink to='services' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+								Services
+							</FooterLink>
 						</FooterItem>
 						<FooterItem>
-							<FooterLink to=''>Our Works</FooterLink>
+							<FooterLink to='works' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+								Our Works
+							</FooterLink>
 						</FooterItem>
 						<FooterItem>
-							<FooterLink to=''>Clients</FooterLink>
+							<FooterLink to='clients' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+								Clients
+							</FooterLink>
 						</FooterItem>
 						<FooterItem>
-							<FooterLink to=''>Contact</FooterLink>
+							<FooterLink to='contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+								Contact
+							</FooterLink>
 						</FooterItem>
 					</FooterNav>
 					<FooterSocial>
-						<FooterLogo>Edie</FooterLogo>
+						<FooterLogo to='/' onClick={toggleHome}>
+							Edie
+						</FooterLogo>
 						<FooterIconSocial>
 							<FooterIcon>
-								<FontAwesomeIcon icon={faMosque} />
+								<img src={Insta} />
 							</FooterIcon>
 							<FooterIcon>
-								<FontAwesomeIcon icon={faMosque} />
+								<img src={Linkedin} />
 							</FooterIcon>
 							<FooterIcon>
-								<FontAwesomeIcon icon={faMosque} />
+								<img src={Twitter} />
 							</FooterIcon>
 						</FooterIconSocial>
 					</FooterSocial>
@@ -56,6 +75,9 @@ const Footer = () => {
 						<InputGlobal />
 					</FooterInput>
 				</FooterContainer>
+				<FooterRight>
+					<p>Mohamed@DevChallanges.io</p>
+				</FooterRight>
 			</FooterWrapper>
 		</>
 	);

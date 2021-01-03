@@ -4,7 +4,7 @@ export const Button = styled.button`
 	border: none;
 	border-radius: 12px;
 	background: ${({ primary }) => (primary ? '#2D9CDB' : '#E0E0E0')};
-	padding: 9px 12px;
+	padding: ${({ big }) => (big ? '11px 28px' : '9px 12px')};
 	color: ${({ primary }) => (primary ? '#fff' : '#828282')};
 	font-size: 16px;
 	display: flex;
